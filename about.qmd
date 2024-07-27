@@ -1,0 +1,16 @@
+---
+title: "About"
+mainfont: Fira Code
+---
+
+I am post-doctoral researcher in the Anthropology Department at UC Davis. I am interested in how cultural animals (human and nonhuman) adopt habits and beliefs, how these develop and change across their lifetime, and how they are transmitted across networks. I am especially interested in how these micro-level processes scale up to aggregate patterns of cultural change. To answer these questions I use longitudinal data, social network analysis, simulations, and formal models. I also love Bayesian statistics, music, and football (soccer).
+
+::: {#fig-elephants layout-ncol="3"}
+![](plts/plt_00855.png)
+
+![](plts/plt_00856.png)
+
+![](plts/plt_00857.png)
+
+Figures from Conway's Game of Life generated using [this code](https://github.com/WinVector/FastBaseR/blob/master/R/ConwayLife.R)
+:::

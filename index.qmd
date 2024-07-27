@@ -1,0 +1,18 @@
+---
+title: "Nicolás Restrepo Ochoa"
+mainfont: Fira Code
+about: 
+  id: content
+  template: jolla
+  image: main_photo.jpg
+  image-shape: round
+  links: 
+    - icon: github
+      href: https://github.com/NicolasRestrep
+    - icon: journals
+      href: https://scholar.google.com/citations?user=SyqYrzgAAAAJ&hl=en  
+---
+
+::: {#content style="text-align: center;"}
+I am a post-doctoral researcher in the Anthropology Department at UC Davis. My work examines how and when individuals update their habits and beliefs, and how these individual-level changes scale up to patterns of cultural change.
+:::

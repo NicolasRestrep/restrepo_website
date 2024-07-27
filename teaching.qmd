@@ -1,0 +1,15 @@
+---
+title: "Teaching"
+---
+
+In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an **Introduction to Data Science course**, available [here](https://github.com/NicolasRestrep/223_course). At Davis, I offered a 3 day workshop on [**Doing Reproducible Research with R**](https://docs.google.com/document/d/17-H_5FMyDeqQ_7ja-KmGk8GMHwZtSK1klPc80UoehC8/edit?usp=sharing). I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi [here](https://docs.google.com/document/d/1q_wGOwOGFQx3tsSDL-u-xSknZn0QzktomoWMEA2Rl6U/edit?usp=sharing).
+
+::: {#fig-conway layout-ncol="3"}
+![](plts/plt_00001.png)
+
+![](plts/plt_00002.png)
+
+![](plts/plt_00003.png)
+
+Figures from Conway's Game of Life generated using [this code](https://github.com/WinVector/FastBaseR/blob/master/R/ConwayLife.R)
+:::

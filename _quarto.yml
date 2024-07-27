@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: " "
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - icon: person-raised-hand
+        text: About
+        href: about.qmd
+      - icon: file-person
+        text: CV
+        href: CV/index.qmd
+      - icon: book
+        text: Publications
+        href: publications.qmd
+      - icon: pencil
+        text: Teaching
+        href: teaching.qmd
+
+format:
+  html:
+    theme: jolla
+    css: styles.css
+    toc: true
+
+editor: visual
+

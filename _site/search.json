@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicolás Restrepo Ochoa",
+    "section": "",
+    "text": "I am a post-doctoral researcher in the Anthropology Department at UC Davis. My work examines how and when individuals update their habits and beliefs, and how these individual-level changes scale up to patterns of cultural change."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am post-doctoral researcher in the Anthropology Department at UC Davis. I am interested in how cultural animals (human and nonhuman) adopt habits and beliefs, how these develop and change across their lifetime, and how they are transmitted across networks. I am especially interested in how these micro-level processes scale up to aggregate patterns of cultural change. To answer these questions I use longitudinal data, social network analysis, simulations, and formal models. I also love Bayesian statistics, music, and football (soccer).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Figures from Conway’s Game of Life generated using this code"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Published:\n\n“Hunter-Gatherer Foraging Networks Promote Information Transmission” (Co-author) [RSOS] Link.\n“The role of template matching in the attribution of immorality”. [Poetics] Link.\n“Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement” (Co-author). [Evolutionary Human Sciences] Link\n“Identity Structures and Well-Being” (Co-author).[Social Psychology Quarterly] Link\n\nRevised and Resubmit:\n\n“Measuring Movement in Cultural Landscapes” (Co-author). [Poetics] Link\n“Resilience in Animal Networks” (Co-author). [Phil Trans B]\n\nIn Preparation:\n\n“Cultural transmission and the global and local dynamics of social influence” (Co-author) Link\n“The shape formative windows and the pace of cultural change”. Link\n“Has young adulthood extended? Variation in formative periods across cohorts” (Co-author).\n“Signals of what? The puzzle of the emergence of new collective rituals” (Co-author).\n“Understanding moral disagreement through assumptions of vulnerability” (Co-author).\n“Improving Functionalist Analysis” (Co-author)."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an Introduction to Data Science course, available here. At Davis, I offered a 3 day workshop on Doing Reproducible Research with R. I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Figures from Conway’s Game of Life generated using this code"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My work is about with how people acquire and discard habits and beliefs across the life-course, and how these individual-level processes aggregate up to large-scale patterns of cultural change. I have developed this research agenda against the backdrop of a burgeoning interdisciplinary interest in how individuals acquire, internalize, and transmit culture."
+  },
+  {
+    "objectID": "research.html#personal-culture-and-its-development",
+    "href": "research.html#personal-culture-and-its-development",
+    "title": "Research",
+    "section": "Personal culture (and its development)",
+    "text": "Personal culture (and its development)\nA key part of my work is how we measure internalized culture. To understand how people change their attitudes, we need first to understand what we are measuring. Some of my work seeks tools to accomplish this. I have used semantic differentials to measure the connotative meanings of moral dilemmas and rugged landscapes to represent attitudinal spaces and to examine how individuals move across them. I have also built intrapersonal identity networks, showing that the structure of relationships between identities within the self is associated with key well-being outcomes."
+  },
+  {
+    "objectID": "research.html#openness-to-change",
+    "href": "research.html#openness-to-change",
+    "title": "Research",
+    "section": "Openness to change",
+    "text": "Openness to change\nA second component of my research investigates the contexts in which individuals are open to changing their minds based on novel information. Recent work on attitudinal development has regularly found that, after a certain age, individuals rarely change their beliefs. This finding resonates with work on formative periods from other disciplines. This leads to several questions. First, we wonder whether this pattern of early exploration followed by stability is robust across cultures. In a project with Kevin Kiley, we explore whether these formative windows have changed given the dramatic changes in the timing of life-course transitions over the past 50 years. A formative period early in the life course also suggests that most change should occur through cohort replacement. In this paper, we examine the relative contribution of cohort-replacement and individual-level change in accounting for patterns of cultural variation across several countries over the past 40 years. We find some initial evidence that certain cultural issues might change via different mechanisms. Relatedly, here, I explore the implications of variations in the length and shape of formative periods for understanding the pace at which cohort replacement occurs. Through an agent-based simulation, I show that the interplay between the length of formative periods and the demographic makeup of a population affects rates of cultural change."
+  },
+  {
+    "objectID": "research.html#cultural-transmission",
+    "href": "research.html#cultural-transmission",
+    "title": "Research",
+    "section": "Cultural Transmission",
+    "text": "Cultural Transmission\nA third theme in my work is related to how culture is transmitted via social networks. I integrate sociological work on social influence with ongoing behavioral science research about social learning. There are many parallels between these strands of work that remain unexploited. Here, a colleague and I show that different social learning strategies combine with the topology of networks to produce different patterns of cultural diffusion. This paper builds on my previous work that examined what kind of networks are better suited for efficient cultural transmission. In interdisciplinary work with different teams, we have shown that central-place foraging – characteristic of hunter-gatherers – results in efficient networks for cultural diffusion, and we have examined how resilient animal networks are to the removal of particular nodes, simulating the effects of poaching."
+  },
+  {
+    "objectID": "research.html#current-work",
+    "href": "research.html#current-work",
+    "title": "Research",
+    "section": "Current Work",
+    "text": "Current Work\nMy post-doctoral work brings these three themes together. We are studying a new pilgrimage site in Peru to understand how collective rituals emerge and become institutionalized. This requires understanding how to conceptualize and measure the adoption of a new belief. In our fieldwork, we are using traditional survey questions, as well as economic games and cognitive tasks. A key part for understanding this puzzle is figuring out who the first adopters are. This, in turn, will shed light on ongoing theorizing about the circumstances that make individuals more open to adopting new beliefs. Further, we need to understand the social networks through which information about the existence of the site – and its miracle-granting powers – is transmitted."
+  }
+]
