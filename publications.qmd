@@ -4,13 +4,9 @@ title: "Publications"
 
 -   [*Published*]{.underline}:
     1)  "Hunter-Gatherer Foraging Networks Promote Information Transmission" (Co-author) \[*RSOS*\] [Link](https://royalsocietypublishing.org/doi/full/10.1098/rsos.211324).
-
     2)  "The role of template matching in the attribution of immorality". \[*Poetics*\] [Link](https://doi.org/10.1016/j.poetic.2021.101643).
-
     3)  "Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement" (Co-author). \[*Evolutionary Human Sciences*\] [Link](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/opinions-on-hardtodiscuss-topics-change-more-via-cohort-replacement/D11EC23A36D627465FDC9AA52AD049E1)
-
-    4)  "Identity Structures and Well-Being" (Co-author).\[*Social Psychology Quarterly*\] [Link](https://osf.io/preprints/socarxiv/fahe3/)
-
+    4)  "Identity Networks as a New Frontier: Conceptualizing, Mapping, and Analyzing Identity Structures and Their Impact on Well-Being" (Co-author).[*Social Psychology Quarterly*] [Link](https://doi.org/10.1177/01902725241292328)
     5)  "Network indicators of cultural resilience to anthropogenic removals in animal societies" (Co-author).\[*Philosophical Transactions of the Royal Society B*\][Link](https://ucdavis.box.com/s/8lbipunsocal5tyl5dtalfc1484n8mq6)
 -   [*Revised and Resubmit*]{.underline}:
     1)  "Measuring Movement in Cultural Landscapes" (Co-author). \[*Poetics*\] [Link](https://osf.io/preprints/socarxiv/wdh3f)

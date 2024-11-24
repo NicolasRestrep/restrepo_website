@@ -11,6 +11,9 @@ website:
       - icon: person-raised-hand
         text: About
         href: about.qmd
+      - icon: book
+        text: Research
+        href: research.qmd
       - icon: file-person
         text: CV
         href: CV/index.qmd
