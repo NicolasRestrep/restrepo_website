@@ -2,22 +2,103 @@
 title: "Publications"
 ---
 
--   [*Published*]{.underline}:
-    1)  "Hunter-Gatherer Foraging Networks Promote Information Transmission" (Co-author) \[*RSOS*\] [Link](https://royalsocietypublishing.org/doi/full/10.1098/rsos.211324).
-    2)  "The role of template matching in the attribution of immorality". \[*Poetics*\] [Link](https://doi.org/10.1016/j.poetic.2021.101643).
-    3)  "Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement" (Co-author). \[*Evolutionary Human Sciences*\] [Link](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/opinions-on-hardtodiscuss-topics-change-more-via-cohort-replacement/D11EC23A36D627465FDC9AA52AD049E1)
-    4)  "Identity Networks as a New Frontier: Conceptualizing, Mapping, and Analyzing Identity Structures and Their Impact on Well-Being" (Co-author).[*Social Psychology Quarterly*] [Link](https://doi.org/10.1177/01902725241292328)
-    5)  "Network indicators of cultural resilience to anthropogenic removals in animal societies" (Co-author).\[*Philosophical Transactions of the Royal Society B*\][Link](https://ucdavis.box.com/s/8lbipunsocal5tyl5dtalfc1484n8mq6)
-    
--   [*Conditional Acceptance*]{.underline}:
-    1)  "Measuring Movement in Cultural Landscapes" (Co-author). \[*Poetics*\] [Link](https://osf.io/preprints/socarxiv/wdh3f)
-    
--   [*Under Review*]{.underline}:
-    1) "The Emergence of a New Pilgrimage as an Assurance Game" (Co-author).[*Proc. R. Soc. B*] [Link](https://osf.io/preprints/socarxiv/rdqnk).
-    2) “Liberals and Conservatives Make Different Assumptions of Vulnerability, Explaining Moral Disagreement” (Co-author).[*Personality and Social Psychology Bulletin*]
-    3) "Improving Functionalist Analysis" (Co-author). [*American Journal of Sociology*] [Link](https://osf.io/preprints/socarxiv/dfc4k)
-    
--   [*In Preparation*]{.underline}:
-    1)  "Cultural transmission and the global and local dynamics of social influence" (Co-author) [Link](https://osf.io/preprints/socarxiv/2vyhp/)
-    2)  “The shape formative windows and the pace of cultural change”. [Link](https://osf.io/preprints/socarxiv/y8b2e)
-    3)  "Has young adulthood extended? Variation in formative periods across cohorts" (Co-author).
+## Published
+
+  1) Andrés Castro Araújo and **Nicolás Restrepo Ochoa**. "How to Make a Functionalist Argument". *Sociological Science*. [Link](https://sociologicalscience.com/articles-v12-20-456/)
+  2) **Nicolás Restrepo Ochoa** and Turgut Keskintürk. "Measuring Movement in Cultural Landscapes". *Poetics*. [Link](https://www.sciencedirect.com/science/article/pii/S0304422X24001037)
+  3) Amelia Meier, **Nicolás Restrepo Ochoa**, et al. "Network indicators of anthropogenic removals in animal societies". *Philosophical Transactions of the Royal Society B*. [Link](https://royalsocietypublishing.org/doi/full/10.1098/rstb.2024.0144) 
+  4) Maria Cristina Ramos Flor and **Nicolás Restrepo Ochoa**. "Identity Networks as a New Frontier: Conceptualizing, Mapping, and Analyzing Identity Structures and Their Impact on Well-Being". *Social Psychology Quarterly*. [Link](https://doi.org/10.1177/01902725241292328). *Winner of the outstanding recent contribution award by the american sociological association's social psychology section*.
+  5) **Nicolás Restrepo Ochoa** and Stephen Vaisey. "Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement". *Evolutionary Human Sciences*. [Link](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/opinions-on-hardtodiscuss-topics-change-more-via-cohort-replacement/D11EC23A36D627465FDC9AA52AD049E1)
+  6) **Nicolás Restrepo Ochoa**. "The role of template matching in the attribution of immorality". *Poetics*. [Link](https://doi.org/10.1016/j.poetic.2021.101643).
+  7) Ketika Garg, Cecilia Padilla Iglesias, **Nicolás Restrepo Ochoa**, VB Knight. "Hunter-Gatherer Foraging Networks Promote Information Transmission". *RSOS*. [Link](https://royalsocietypublishing.org/doi/full/10.1098/rsos.211324).
+  
+## Conditionally Accepted
+
+  1) **Nicolás Restrepo Ochoa** and Cristina Moya. "The Emergence of a New Pilgrimage as an Assurance Game" (Co-author).*RSOS*. [Link](https://osf.io/preprints/socarxiv/rdqnk).
+  
+## Under Review
+
+  1) Jake Womick, Daniela Goya-Tocchetto, **Nicolás Restrepo Ochoa**, et al. “Moral disagreement across politics is explained by different assumptions about who is most vulnerable to harm”. *Personality and Social Psychology Bulletin*. 
+  2) Kevin Kiley and **Nicolás Restrepo Ochoa**. "Life-course Trajectories of Sociopolitical Attitude Change across Cohorts and Topics". *American Journal of Sociology*.
+  
+
+## In Progress
+
+  1) **Nicolás Restrepo Ochoa** and Thomas Wolff. "Cultural transmission and the global and local dynamics of social influence". [Link](https://osf.io/preprints/socarxiv/2vyhp/).
+  2) **Nicolás Restrepo Ochoa**. “The shape formative windows and the pace of cultural change”. [Link](https://osf.io/preprints/socarxiv/y8b2e)
+  
+::: {#game-of-life}
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <canvas id="life1" width="200" height="200"></canvas>
+  <canvas id="life50" width="200" height="200"></canvas>
+  <canvas id="life100" width="200" height="200"></canvas>
+</div>
+
+<p style="text-align:center; font-style: italic; margin-top: 10px;">
+  You just got a random development of the Game of Life. Did you get anything interesting?
+</p>
+
+<script>
+function createGrid(size, density=0.2) {
+  const grid = [];
+  for (let i = 0; i < size; i++) {
+    grid[i] = [];
+    for (let j = 0; j < size; j++) {
+      grid[i][j] = Math.random() < density ? 1 : 0;
+    }
+  }
+  return grid;
+}
+
+function nextGen(grid) {
+  const size = grid.length;
+  const newGrid = [];
+  for (let i = 0; i < size; i++) {
+    newGrid[i] = [];
+    for (let j = 0; j < size; j++) {
+      let neighbors = 0;
+      for (let x = -1; x <= 1; x++) {
+        for (let y = -1; y <= 1; y++) {
+          if (x === 0 && y === 0) continue;
+          const ni = (i + x + size) % size;
+          const nj = (j + y + size) % size;
+          neighbors += grid[ni][nj];
+        }
+      }
+      newGrid[i][j] = (grid[i][j] === 1 && (neighbors === 2 || neighbors === 3)) || 
+                      (grid[i][j] === 0 && neighbors === 3) ? 1 : 0;
+    }
+  }
+  return newGrid;
+}
+
+function drawGrid(grid, ctx, cellSize) {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+      if (grid[i][j] === 1) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(j * cellSize, i * cellSize, cellSize, cellSize);
+      }
+    }
+  }
+}
+
+// Main simulation
+const size = 100;
+let grid = createGrid(size, 0.25);
+const snapshots = {};
+
+for (let t = 1; t <= 100; t++) {
+  if (t === 1 || t === 50 || t === 100) {
+    snapshots[t] = JSON.parse(JSON.stringify(grid));
+  }
+  grid = nextGen(grid);
+}
+
+// Draw snapshots
+drawGrid(snapshots[1], document.getElementById("life1").getContext("2d"), 2);
+drawGrid(snapshots[50], document.getElementById("life50").getContext("2d"), 2);
+drawGrid(snapshots[100], document.getElementById("life100").getContext("2d"), 2);
+</script>
+:::

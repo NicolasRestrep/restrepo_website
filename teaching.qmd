@@ -2,14 +2,82 @@
 title: "Teaching"
 ---
 
-In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an **Introduction to Data Science course**, available [here](https://github.com/NicolasRestrep/223_course). At Davis, I offered a 3 day workshop on [**Doing Reproducible Research with R**](https://docs.google.com/document/d/17-H_5FMyDeqQ_7ja-KmGk8GMHwZtSK1klPc80UoehC8/edit?usp=sharing). I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi [here](https://docs.google.com/document/d/1q_wGOwOGFQx3tsSDL-u-xSknZn0QzktomoWMEA2Rl6U/edit?usp=sharing).
+In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. My teaching philosophy is based on demystifying subjects that are often taught in deliberately convoluted ways. This lowers the barrier of entry for these tools, makes the classroom more inclusive, and makes for a more diverse and vibrant research community.
 
-::: {#fig-conway layout-ncol="3"}
-![](plts/plt_00001.png)
+At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an **Introduction to Data Science course**, available [here](https://github.com/NicolasRestrep/223_course). At Davis, I offered a 3 day workshop on [**Doing Reproducible Research with R**](https://docs.google.com/document/d/17-H_5FMyDeqQ_7ja-KmGk8GMHwZtSK1klPc80UoehC8/edit?usp=sharing). I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi [here](https://docs.google.com/document/d/1q_wGOwOGFQx3tsSDL-u-xSknZn0QzktomoWMEA2Rl6U/edit?usp=sharing).
 
-![](plts/plt_00002.png)
+::: {#game-of-life}
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <canvas id="life1" width="200" height="200"></canvas>
+  <canvas id="life50" width="200" height="200"></canvas>
+  <canvas id="life100" width="200" height="200"></canvas>
+</div>
 
-![](plts/plt_00003.png)
+<p style="text-align:center; font-style: italic; margin-top: 10px;">
+  You just got a random development of the Game of Life. Did you get anything interesting?
+</p>
 
-Figures from Conway's Game of Life generated using [this code](https://github.com/WinVector/FastBaseR/blob/master/R/ConwayLife.R)
+<script>
+function createGrid(size, density=0.2) {
+  const grid = [];
+  for (let i = 0; i < size; i++) {
+    grid[i] = [];
+    for (let j = 0; j < size; j++) {
+      grid[i][j] = Math.random() < density ? 1 : 0;
+    }
+  }
+  return grid;
+}
+
+function nextGen(grid) {
+  const size = grid.length;
+  const newGrid = [];
+  for (let i = 0; i < size; i++) {
+    newGrid[i] = [];
+    for (let j = 0; j < size; j++) {
+      let neighbors = 0;
+      for (let x = -1; x <= 1; x++) {
+        for (let y = -1; y <= 1; y++) {
+          if (x === 0 && y === 0) continue;
+          const ni = (i + x + size) % size;
+          const nj = (j + y + size) % size;
+          neighbors += grid[ni][nj];
+        }
+      }
+      newGrid[i][j] = (grid[i][j] === 1 && (neighbors === 2 || neighbors === 3)) || 
+                      (grid[i][j] === 0 && neighbors === 3) ? 1 : 0;
+    }
+  }
+  return newGrid;
+}
+
+function drawGrid(grid, ctx, cellSize) {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+      if (grid[i][j] === 1) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(j * cellSize, i * cellSize, cellSize, cellSize);
+      }
+    }
+  }
+}
+
+// Main simulation
+const size = 100;
+let grid = createGrid(size, 0.25);
+const snapshots = {};
+
+for (let t = 1; t <= 100; t++) {
+  if (t === 1 || t === 50 || t === 100) {
+    snapshots[t] = JSON.parse(JSON.stringify(grid));
+  }
+  grid = nextGen(grid);
+}
+
+// Draw snapshots
+drawGrid(snapshots[1], document.getElementById("life1").getContext("2d"), 2);
+drawGrid(snapshots[50], document.getElementById("life50").getContext("2d"), 2);
+drawGrid(snapshots[100], document.getElementById("life100").getContext("2d"), 2);
+</script>
 :::

@@ -3,14 +3,85 @@ title: "About"
 mainfont: Fira Code
 ---
 
-I am post-doctoral researcher in the Anthropology Department at UC Davis. I am interested in how cultural animals (human and nonhuman) adopt habits and beliefs, how these develop and change across their lifetime, and how they are transmitted across networks. I am especially interested in how these micro-level processes scale up to aggregate patterns of cultural change. To answer these questions I use longitudinal data, social network analysis, simulations, and formal models. I also love Bayesian statistics, music, and football (soccer).
+I am a postdoctoral researcher in the Anthropology Department at UC Davis.  
+My work explores how people and groups adopt new habits and beliefs, how these spread through social networks, and how individual-level changes can scale into large cultural shifts.  
 
-::: {#fig-elephants layout-ncol="3"}
-![](plts/plt_00855.png)
+To study these dynamics, I combine longitudinal data, social network analysis, agent-based simulations, and formal modeling. I am especially passionate about Bayesian statistics and applying computational tools to understand complex systems. 
 
-![](plts/plt_00856.png)
+Outside of research, I enjoy music, football (soccer), and playing around with generative models like Conway’s Game of Life -- where small changes aggregate to large-scale patterns:
 
-![](plts/plt_00857.png)
+::: {#game-of-life}
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <canvas id="life1" width="200" height="200"></canvas>
+  <canvas id="life50" width="200" height="200"></canvas>
+  <canvas id="life100" width="200" height="200"></canvas>
+</div>
 
-Figures from Conway's Game of Life generated using [this code](https://github.com/WinVector/FastBaseR/blob/master/R/ConwayLife.R)
+<p style="text-align:center; font-style: italic; margin-top: 10px;">
+  You just got a random development of the Game of Life. Did you get anything interesting?
+</p>
+
+<script>
+function createGrid(size, density=0.2) {
+  const grid = [];
+  for (let i = 0; i < size; i++) {
+    grid[i] = [];
+    for (let j = 0; j < size; j++) {
+      grid[i][j] = Math.random() < density ? 1 : 0;
+    }
+  }
+  return grid;
+}
+
+function nextGen(grid) {
+  const size = grid.length;
+  const newGrid = [];
+  for (let i = 0; i < size; i++) {
+    newGrid[i] = [];
+    for (let j = 0; j < size; j++) {
+      let neighbors = 0;
+      for (let x = -1; x <= 1; x++) {
+        for (let y = -1; y <= 1; y++) {
+          if (x === 0 && y === 0) continue;
+          const ni = (i + x + size) % size;
+          const nj = (j + y + size) % size;
+          neighbors += grid[ni][nj];
+        }
+      }
+      newGrid[i][j] = (grid[i][j] === 1 && (neighbors === 2 || neighbors === 3)) || 
+                      (grid[i][j] === 0 && neighbors === 3) ? 1 : 0;
+    }
+  }
+  return newGrid;
+}
+
+function drawGrid(grid, ctx, cellSize) {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+      if (grid[i][j] === 1) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(j * cellSize, i * cellSize, cellSize, cellSize);
+      }
+    }
+  }
+}
+
+// Main simulation
+const size = 100;
+let grid = createGrid(size, 0.25);
+const snapshots = {};
+
+for (let t = 1; t <= 100; t++) {
+  if (t === 1 || t === 50 || t === 100) {
+    snapshots[t] = JSON.parse(JSON.stringify(grid));
+  }
+  grid = nextGen(grid);
+}
+
+// Draw snapshots
+drawGrid(snapshots[1], document.getElementById("life1").getContext("2d"), 2);
+drawGrid(snapshots[50], document.getElementById("life50").getContext("2d"), 2);
+drawGrid(snapshots[100], document.getElementById("life100").getContext("2d"), 2);
+</script>
 :::

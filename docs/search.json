@@ -4,7 +4,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Published:\n\n“Hunter-Gatherer Foraging Networks Promote Information Transmission” (Co-author) [RSOS] Link.\n“The role of template matching in the attribution of immorality”. [Poetics] Link.\n“Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement” (Co-author). [Evolutionary Human Sciences] Link\n“Identity Networks as a New Frontier: Conceptualizing, Mapping, and Analyzing Identity Structures and Their Impact on Well-Being” (Co-author).[Social Psychology Quarterly] Link\n“Network indicators of cultural resilience to anthropogenic removals in animal societies” (Co-author).[Philosophical Transactions of the Royal Society B]Link\n\nConditional Acceptance:\n\n“Measuring Movement in Cultural Landscapes” (Co-author). [Poetics] Link\n\nUnder Review:\n\n“The Emergence of a New Pilgrimage as an Assurance Game” (Co-author).[Proc. R. Soc. B] Link.\n“Liberals and Conservatives Make Different Assumptions of Vulnerability, Explaining Moral Disagreement” (Co-author).[Personality and Social Psychology Bulletin]\n“Improving Functionalist Analysis” (Co-author). [American Journal of Sociology] Link\n\nIn Preparation:\n\n“Cultural transmission and the global and local dynamics of social influence” (Co-author) Link\n“The shape formative windows and the pace of cultural change”. Link\n“Has young adulthood extended? Variation in formative periods across cohorts” (Co-author)."
+    "text": "Andrés Castro Araújo and Nicolás Restrepo Ochoa. “How to Make a Functionalist Argument”. Sociological Science. Link\nNicolás Restrepo Ochoa and Turgut Keskintürk. “Measuring Movement in Cultural Landscapes”. Poetics. Link\nAmelia Meier, Nicolás Restrepo Ochoa, et al. “Network indicators of anthropogenic removals in animal societies”. Philosophical Transactions of the Royal Society B. Link\nMaria Cristina Ramos Flor and Nicolás Restrepo Ochoa. “Identity Networks as a New Frontier: Conceptualizing, Mapping, and Analyzing Identity Structures and Their Impact on Well-Being”. Social Psychology Quarterly. Link. Winner of the outstanding recent contribution award by the american sociological association’s social psychology section.\nNicolás Restrepo Ochoa and Stephen Vaisey. “Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement”. Evolutionary Human Sciences. Link\nNicolás Restrepo Ochoa. “The role of template matching in the attribution of immorality”. Poetics. Link.\nKetika Garg, Cecilia Padilla Iglesias, Nicolás Restrepo Ochoa, VB Knight. “Hunter-Gatherer Foraging Networks Promote Information Transmission”. RSOS. Link."
   },
   {
     "objectID": "research.html",
@@ -46,7 +46,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an Introduction to Data Science course, available here. At Davis, I offered a 3 day workshop on Doing Reproducible Research with R. I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Figures from Conway’s Game of Life generated using this code"
+    "text": "In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. My teaching philosophy is based on demystifying subjects that are often taught in deliberately convoluted ways. This lowers the barrier of entry for these tools, makes the classroom more inclusive, and makes for a more diverse and vibrant research community.\nAt Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an Introduction to Data Science course, available here. At Davis, I offered a 3 day workshop on Doing Reproducible Research with R. I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi here.\n\n\n\n\n\n\n\n\n\n\nYou just got a random development of the Game of Life. Did you get anything interesting?"
   },
   {
     "objectID": "index.html",
@@ -60,6 +60,34 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am post-doctoral researcher in the Anthropology Department at UC Davis. I am interested in how cultural animals (human and nonhuman) adopt habits and beliefs, how these develop and change across their lifetime, and how they are transmitted across networks. I am especially interested in how these micro-level processes scale up to aggregate patterns of cultural change. To answer these questions I use longitudinal data, social network analysis, simulations, and formal models. I also love Bayesian statistics, music, and football (soccer).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Figures from Conway’s Game of Life generated using this code"
+    "text": "I am a postdoctoral researcher in the Anthropology Department at UC Davis.\nMy work explores how people and groups adopt new habits and beliefs, how these spread through social networks, and how individual-level changes can scale into large cultural shifts.\nTo study these dynamics, I combine longitudinal data, social network analysis, agent-based simulations, and formal modeling. I am especially passionate about Bayesian statistics and applying computational tools to understand complex systems.\nOutside of research, I enjoy music, football (soccer), and playing around with generative models like Conway’s Game of Life – where small changes aggregate to large-scale patterns:\n\n\n\n\n\n\n\n\n\n\nYou just got a random development of the Game of Life. Did you get anything interesting?"
+  },
+  {
+    "objectID": "publications.html#published",
+    "href": "publications.html#published",
+    "title": "Publications",
+    "section": "",
+    "text": "Andrés Castro Araújo and Nicolás Restrepo Ochoa. “How to Make a Functionalist Argument”. Sociological Science. Link\nNicolás Restrepo Ochoa and Turgut Keskintürk. “Measuring Movement in Cultural Landscapes”. Poetics. Link\nAmelia Meier, Nicolás Restrepo Ochoa, et al. “Network indicators of anthropogenic removals in animal societies”. Philosophical Transactions of the Royal Society B. Link\nMaria Cristina Ramos Flor and Nicolás Restrepo Ochoa. “Identity Networks as a New Frontier: Conceptualizing, Mapping, and Analyzing Identity Structures and Their Impact on Well-Being”. Social Psychology Quarterly. Link. Winner of the outstanding recent contribution award by the american sociological association’s social psychology section.\nNicolás Restrepo Ochoa and Stephen Vaisey. “Opinions on Hard-to-Discuss Topics Change More via Cohort Replacement”. Evolutionary Human Sciences. Link\nNicolás Restrepo Ochoa. “The role of template matching in the attribution of immorality”. Poetics. Link.\nKetika Garg, Cecilia Padilla Iglesias, Nicolás Restrepo Ochoa, VB Knight. “Hunter-Gatherer Foraging Networks Promote Information Transmission”. RSOS. Link."
+  },
+  {
+    "objectID": "publications.html#conditionally-accepted",
+    "href": "publications.html#conditionally-accepted",
+    "title": "Publications",
+    "section": "Conditionally Accepted",
+    "text": "Conditionally Accepted\n\nNicolás Restrepo Ochoa and Cristina Moya. “The Emergence of a New Pilgrimage as an Assurance Game” (Co-author).RSOS. Link."
+  },
+  {
+    "objectID": "publications.html#under-review",
+    "href": "publications.html#under-review",
+    "title": "Publications",
+    "section": "Under Review",
+    "text": "Under Review\n\nJake Womick, Daniela Goya-Tocchetto, Nicolás Restrepo Ochoa, et al. “Moral disagreement across politics is explained by different assumptions about who is most vulnerable to harm”. Personality and Social Psychology Bulletin.\nKevin Kiley and Nicolás Restrepo Ochoa. “Life-course Trajectories of Sociopolitical Attitude Change across Cohorts and Topics”. American Journal of Sociology."
+  },
+  {
+    "objectID": "publications.html#in-progress",
+    "href": "publications.html#in-progress",
+    "title": "Publications",
+    "section": "In Progress",
+    "text": "In Progress\n\nNicolás Restrepo Ochoa and Thomas Wolff. “Cultural transmission and the global and local dynamics of social influence”. Link.\nNicolás Restrepo Ochoa. “The shape formative windows and the pace of cultural change”. Link\n\n\n\n\n\n\n\n\n\n\n\nYou just got a random development of the Game of Life. Did you get anything interesting?"
   }
 ]

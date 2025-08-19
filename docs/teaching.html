@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-79108a0fc1995748cbd19a5b0e3e3e7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -153,26 +153,83 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an <strong>Introduction to Data Science course</strong>, available <a href="https://github.com/NicolasRestrep/223_course">here</a>. At Davis, I offered a 3 day workshop on <a href="https://docs.google.com/document/d/17-H_5FMyDeqQ_7ja-KmGk8GMHwZtSK1klPc80UoehC8/edit?usp=sharing"><strong>Doing Reproducible Research with R</strong></a>. I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi <a href="https://docs.google.com/document/d/1q_wGOwOGFQx3tsSDL-u-xSknZn0QzktomoWMEA2Rl6U/edit?usp=sharing">here</a>.</p>
-<div id="fig-conway" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-conway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="plts/plt_00001.png" class="img-fluid figure-img"></p>
+<p>In the last few years, I have developed a passion for teaching, especially subjects related to computational skills. My teaching philosophy is based on demystifying subjects that are often taught in deliberately convoluted ways. This lowers the barrier of entry for these tools, makes the classroom more inclusive, and makes for a more diverse and vibrant research community.</p>
+<p>At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an <strong>Introduction to Data Science course</strong>, available <a href="https://github.com/NicolasRestrep/223_course">here</a>. At Davis, I offered a 3 day workshop on <a href="https://docs.google.com/document/d/17-H_5FMyDeqQ_7ja-KmGk8GMHwZtSK1klPc80UoehC8/edit?usp=sharing"><strong>Doing Reproducible Research with R</strong></a>. I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi <a href="https://docs.google.com/document/d/1q_wGOwOGFQx3tsSDL-u-xSknZn0QzktomoWMEA2Rl6U/edit?usp=sharing">here</a>.</p>
+<div id="game-of-life">
+<div style="display: flex; justify-content: center; gap: 20px;">
+<canvas id="life1" width="200" height="200">
+</canvas>
+<canvas id="life50" width="200" height="200">
+</canvas>
+<canvas id="life100" width="200" height="200">
+</canvas>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="plts/plt_00002.png" class="img-fluid figure-img"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="plts/plt_00003.png" class="img-fluid figure-img"></p>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-conway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Figures from Conway’s Game of Life generated using <a href="https://github.com/WinVector/FastBaseR/blob/master/R/ConwayLife.R">this code</a>
-</figcaption>
-</figure>
+<p style="text-align:center; font-style: italic; margin-top: 10px;">
+You just got a random development of the Game of Life. Did you get anything interesting?
+</p>
+<script>
+function createGrid(size, density=0.2) {
+  const grid = [];
+  for (let i = 0; i < size; i++) {
+    grid[i] = [];
+    for (let j = 0; j < size; j++) {
+      grid[i][j] = Math.random() < density ? 1 : 0;
+    }
+  }
+  return grid;
+}
+
+function nextGen(grid) {
+  const size = grid.length;
+  const newGrid = [];
+  for (let i = 0; i < size; i++) {
+    newGrid[i] = [];
+    for (let j = 0; j < size; j++) {
+      let neighbors = 0;
+      for (let x = -1; x <= 1; x++) {
+        for (let y = -1; y <= 1; y++) {
+          if (x === 0 && y === 0) continue;
+          const ni = (i + x + size) % size;
+          const nj = (j + y + size) % size;
+          neighbors += grid[ni][nj];
+        }
+      }
+      newGrid[i][j] = (grid[i][j] === 1 && (neighbors === 2 || neighbors === 3)) || 
+                      (grid[i][j] === 0 && neighbors === 3) ? 1 : 0;
+    }
+  }
+  return newGrid;
+}
+
+function drawGrid(grid, ctx, cellSize) {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+      if (grid[i][j] === 1) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(j * cellSize, i * cellSize, cellSize, cellSize);
+      }
+    }
+  }
+}
+
+// Main simulation
+const size = 100;
+let grid = createGrid(size, 0.25);
+const snapshots = {};
+
+for (let t = 1; t <= 100; t++) {
+  if (t === 1 || t === 50 || t === 100) {
+    snapshots[t] = JSON.parse(JSON.stringify(grid));
+  }
+  grid = nextGen(grid);
+}
+
+// Draw snapshots
+drawGrid(snapshots[1], document.getElementById("life1").getContext("2d"), 2);
+drawGrid(snapshots[50], document.getElementById("life50").getContext("2d"), 2);
+drawGrid(snapshots[100], document.getElementById("life100").getContext("2d"), 2);
+</script>
 </div>
 
 
@@ -260,8 +317,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -372,7 +427,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
