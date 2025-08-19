@@ -1,6 +1,5 @@
 ---
 title: "Nicolás Restrepo Ochoa"
-mainfont: Fira Code
 about: 
   id: content
   template: jolla

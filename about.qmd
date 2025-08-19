@@ -1,26 +1,36 @@
 ---
 title: "About"
-mainfont: Fira Code
 ---
 
-I am a postdoctoral researcher in the Anthropology Department at UC Davis.  
-My work explores how people and groups adopt new habits and beliefs, how these spread through social networks, and how individual-level changes can scale into large cultural shifts.  
+I am a postdoctoral researcher in the Anthropology Department at UC Davis.\
+My work explores how people and groups adopt new habits and beliefs, how these spread through social networks, and how individual-level changes can scale into large cultural shifts.
 
-To study these dynamics, I combine longitudinal data, social network analysis, agent-based simulations, and formal modeling. I am especially passionate about Bayesian statistics and applying computational tools to understand complex systems. 
+To study these dynamics, I combine longitudinal data, social network analysis, agent-based simulations, and formal modeling. I am especially passionate about Bayesian statistics and applying computational tools to understand complex systems.
 
 Outside of research, I enjoy music, football (soccer), and playing around with generative models like Conway’s Game of Life -- where small changes aggregate to large-scale patterns:
 
-::: {#game-of-life}
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <canvas id="life1" width="200" height="200"></canvas>
-  <canvas id="life50" width="200" height="200"></canvas>
-  <canvas id="life100" width="200" height="200"></canvas>
-</div>
+:::: {#game-of-life}
+::: {style="display: flex; justify-content: center; gap: 20px;"}
+<canvas id="life1" width="200" height="200">
+
+</canvas>
+
+<canvas id="life50" width="200" height="200">
+
+</canvas>
+
+<canvas id="life100" width="200" height="200">
+
+</canvas>
+:::
 
 <p style="text-align:center; font-style: italic; margin-top: 10px;">
-  You just got a random development of the Game of Life. Did you get anything interesting?
+
+You just got a random development of the Game of Life. Did you get anything interesting?
+
 </p>
 
+```{=html}
 <script>
 function createGrid(size, density=0.2) {
   const grid = [];
@@ -84,4 +94,5 @@ drawGrid(snapshots[1], document.getElementById("life1").getContext("2d"), 2);
 drawGrid(snapshots[50], document.getElementById("life50").getContext("2d"), 2);
 drawGrid(snapshots[100], document.getElementById("life100").getContext("2d"), 2);
 </script>
-:::
+```
+::::

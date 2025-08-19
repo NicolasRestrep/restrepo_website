@@ -6,17 +6,28 @@ In the last few years, I have developed a passion for teaching, especially subje
 
 At Duke, I was the teaching assistant for the graduate statistics sequence. There, I also designed the syllabus for an **Introduction to Data Science course**, available [here](https://github.com/NicolasRestrep/223_course). At Davis, I offered a 3 day workshop on [**Doing Reproducible Research with R**](https://docs.google.com/document/d/17-H_5FMyDeqQ_7ja-KmGk8GMHwZtSK1klPc80UoehC8/edit?usp=sharing). I have also designed a series of short courses about data analysis and social networks analysis in R, geared towards spanish-speakers. You can find the syllabi [here](https://docs.google.com/document/d/1q_wGOwOGFQx3tsSDL-u-xSknZn0QzktomoWMEA2Rl6U/edit?usp=sharing).
 
-::: {#game-of-life}
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <canvas id="life1" width="200" height="200"></canvas>
-  <canvas id="life50" width="200" height="200"></canvas>
-  <canvas id="life100" width="200" height="200"></canvas>
-</div>
+:::: {#game-of-life}
+::: {style="display: flex; justify-content: center; gap: 20px;"}
+<canvas id="life1" width="200" height="200">
+
+</canvas>
+
+<canvas id="life50" width="200" height="200">
+
+</canvas>
+
+<canvas id="life100" width="200" height="200">
+
+</canvas>
+:::
 
 <p style="text-align:center; font-style: italic; margin-top: 10px;">
-  You just got a random development of the Game of Life. Did you get anything interesting?
+
+You just got a random development of the Game of Life. Did you get anything interesting?
+
 </p>
 
+```{=html}
 <script>
 function createGrid(size, density=0.2) {
   const grid = [];
@@ -80,4 +91,5 @@ drawGrid(snapshots[1], document.getElementById("life1").getContext("2d"), 2);
 drawGrid(snapshots[50], document.getElementById("life50").getContext("2d"), 2);
 drawGrid(snapshots[100], document.getElementById("life100").getContext("2d"), 2);
 </script>
-:::
+```
+::::
